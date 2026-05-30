@@ -14,7 +14,7 @@ GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 IMGBB_API_KEY = st.secrets["IMGBB_API_KEY"]
 
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-flash')
+model = genai.GenerativeModel('gemini-2.5-flash')
 
 # Koneksi Google Sheets via Secrets (Tidak lagi menggunakan file .json)
 credentials = dict(st.secrets["gcp_service_account"])
